@@ -52,6 +52,7 @@ const cartSlice = createSlice({
             return state;
         },
         clearCart:(state,action)=>{
+            localStorage.removeItem('cartInformation');
             return INITIAL_STATE;
         },
         initialStateSet:(state,action)=>{
@@ -62,6 +63,7 @@ const cartSlice = createSlice({
     },
     extraReducers: builder => {
         builder.addCase(logout.type,(state,action)=>{
+            localStorage.removeItem('cartInformation');
             return INITIAL_STATE;
         })
     }

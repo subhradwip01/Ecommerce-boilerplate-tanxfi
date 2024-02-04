@@ -3,12 +3,26 @@ import { IndianRupee, Heart, ShoppingCart, Star } from "lucide-react";
 import { Button, buttonVariants } from "./ui/Button";
 import { Link } from "react-router-dom";
 import { LOGIN_ROUTE, PRODCUT_DETAILS_BASE_ROUTE } from "../constants/routes";
-import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
-import { addProduct, removeProduct } from "../store/slice/cartSlice";
 import useCart from "../hook/useCart";
+import useFavorite from "../hook/useFavorite";
 const ProductItem = ({ id, amount, image, rating, title, description }) => {
-  const {isAddedtoCart,toggleCart} = useCart({ id, amount, image, rating, title, description });
+  const { isAddedtoCart, toggleCart } = useCart({
+    id,
+    amount,
+    image,
+    rating,
+    title,
+    description,
+  });
+  const { isFavorite, toggleFavorite } = useFavorite({
+    id,
+    amount,
+    image,
+    rating,
+    title,
+    description,
+  });
+  console.log(isFavorite);
   return (
     <div className="shadow bg-white rounded-lg p-3 w-[300px]">
       <img src={image} className="w-[300px] object-fit aspect-[11/16]" />
@@ -21,11 +35,24 @@ const ProductItem = ({ id, amount, image, rating, title, description }) => {
           <p className="flex items-center text-[20px]">
             <IndianRupee size={15} /> {amount}{" "}
           </p>
-          <Heart className="text-rose-400" />
+          <Button variant="link" onClick={toggleFavorite}>
+            <Heart
+              className="text-rose-400"
+              fill={isFavorite ? "pink" : "none"}
+            />
+          </Button>
         </div>
         <div className="flex  gap-3">
-          
-            <Link to={`${PRODCUT_DETAILS_BASE_ROUTE}/${id}`} className={buttonVariants({variant:"default",size:"default",className:"w-full"})}>View</Link>
+          <Link
+            to={`${PRODCUT_DETAILS_BASE_ROUTE}/${id}`}
+            className={buttonVariants({
+              variant: "default",
+              size: "default",
+              className: "w-full",
+            })}
+          >
+            View
+          </Link>
 
           <Button
             onClick={toggleCart}

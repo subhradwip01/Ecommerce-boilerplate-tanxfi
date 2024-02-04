@@ -9,6 +9,8 @@ import {logout} from "../store/slice/authSlice";
 const Navbar = () => {
   const { isLoggedIn } = useSelector((state) => state.user);
   const {totalQuantity} = useSelector(state=>state.cart);
+  const {products}= useSelector(state=>state.favourite);
+  console.log(products);
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const onLogout = () => {
@@ -21,8 +23,8 @@ const Navbar = () => {
         {isLoggedIn ? (
           <>
             {" "}
-            <Link to={FAVOURITES} className="text-rose-400">
-              <Heart fill="currentColor" />
+            <Link to={FAVOURITES} className="text-rose-400 flex items-center gap-2 border border-rose-400 rounded-full px-3 py-1">
+              <Heart fill="currentColor" /> <span>{products.length}</span>
             </Link>
             <Link to={CART_ROUTE} className="text-rose-400 flex items-center gap-2 border border-rose-400 rounded-full px-3 py-1">
               <ShoppingCart fill="currentColor" /> <span>{totalQuantity}</span>
