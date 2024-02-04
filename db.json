@@ -160,5 +160,30 @@
       "totalQuantity": 1
     }
   ],
-  "favourites": []
+  "favourites": [
+    {
+      "id": "1",
+      "amount": "200",
+      "image": "https://i.pinimg.com/originals/25/0d/a3/250da32c889b624849bf828ae2ece420.jpg",
+      "rating": "4.0",
+      "title": "EYEBOGLER Regular Fit Men's Cotton T-Shirt",
+      "description": "What does it feel like to witness climate change playing out in real-time? #notcool. Sound the alarm with our Women's Climate Change T-shirt, printed on organic cotton in our Carbon Neutral factory. Plus, when it's worn out you can send it back to us to be remade into something new. That's what real sustainability means to us."
+    },
+    {
+      "id": "2",
+      "amount": "300",
+      "image": "https://i.pinimg.com/564x/b9/83/a7/b983a7e4e9a4a05ee8ae8333f1c7b2d8.jpg",
+      "rating": "4.0",
+      "title": "RodZen - Men's Cotton Half Sleeve Regular Fit Striped T-Shirt",
+      "description": "What does it feel like to witness climate change playing out in real-time? #notcool. Sound the alarm with our Women's Climate Change T-shirt, printed on organic cotton in our Carbon Neutral factory. Plus, when it's worn out you can send it back to us to be remade into something new. That's what real sustainability means to us."
+    },
+    {
+      "id": "4",
+      "amount": "350",
+      "image": "https://i.pinimg.com/564x/26/ee/90/26ee903549b8b69635152f5db58264b2.jpg",
+      "rating": "4.0",
+      "title": "Jockey - Men's Regular Fit Round Neck Half Sleeved T-Shirt",
+      "description": "What does it feel like to witness climate change playing out in real-time? #notcool. Sound the alarm with our Women's Climate Change T-shirt, printed on organic cotton in our Carbon Neutral factory. Plus, when it's worn out you can send it back to us to be remade into something new. That's what real sustainability means to us."
+    }
+  ]
 }
