@@ -27,8 +27,8 @@ const Home = () => {
 
   const filteredProducts = useMemo(() => {
     return products.filter((pdt) => pdt.title.includes(query));
-  }, [query]);
-
+  }, [query,products]);
+  console.log(filteredProducts);
   return (
     <main className="flex flex-col h-screen">
       <Navbar />
@@ -40,6 +40,7 @@ const Home = () => {
         <>
           <div className="flex p-5 gap-3">
             <Input
+              value={query}
               placeholder="Search here..."
               onChange={(e) => setQuery(e.target.value)}
             />
