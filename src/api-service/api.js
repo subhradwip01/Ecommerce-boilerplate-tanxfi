@@ -3,5 +3,6 @@ export const END_POINTS = {
     products: "/products",
     productDetails:"/product",
     orders:"/orders",
-    favourites:"/favourites"
+    favourites:"/favourites",
+    users:"/users",
 }
