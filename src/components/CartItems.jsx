@@ -21,7 +21,7 @@ const CartItems = ({
   });
   return (
     <div className="border border-grey-400 flex justify-betwee p-3 rounded-md items-center">
-      <img className="w-[200px] aspect-[9/11]" src={image} />
+      <img className="w-[200px] aspect-[9/11] object-contain " src={image} />
       <div className="space-y-3">
         <p className="font-semibold">{title}</p>
         <p className="flex items-center gap-3">

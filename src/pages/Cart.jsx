@@ -5,11 +5,16 @@ import CartItems from "../components/CartItems";
 import { Button } from "../components/ui/Button";
 import { placeOrders } from "../api-service/orders";
 import { clearCart } from "../store/slice/cartSlice";
+import { NavLink, useNavigate } from "react-router-dom";
+import { HOME_ROUTE } from "../constants/routes";
+import { ArrowLeft } from "lucide-react";
+
 const Cart = () => {
   const { totalQuantity, totalPrice, products } = useSelector(
     (state) => state.cart
   );
   const dispath = useDispatch();
+  const navigate = useNavigate();
   const onOrder = async () => {
     try {
       const res = await placeOrders({ products, totalPrice, totalQuantity });
@@ -23,10 +28,11 @@ const Cart = () => {
   return (
     <main className="h-screen flex flex-col">
       <Navbar />
-      <div className="space-y-5 p-5">
+      <div className="space-y-5 p-5 relative">
         <h1 className=" text-[24px] font-bold ">
           Your <span className="text-rose-400">Items</span>
         </h1>
+        <Button variant="outline" size="icon" className="absolute top-4 left-5 font-semibold text-[20px]" onClick={()=>navigate(-1)}><ArrowLeft /></Button>
         {products.length > 0 ? (
           <>
             {products.map(({ productDetails, quantity }) => (
@@ -59,8 +65,9 @@ const Cart = () => {
             </div>
           </>
         ) : (
-          <div className="flex-1 flex items-center justify-center">
+          <div className="flex-1 flex items-center justify-center flex-col">
             <h1>Oops! No Items in the cart</h1>
+            <p className="text-[20px]"><span><NavLink to={HOME_ROUTE} className="text-pink-800 font-semibold">Click here</NavLink></span>  to add items to your cart</p>
           </div>
         )}
       </div>

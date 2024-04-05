@@ -1,27 +1,11 @@
 {
   "users": [
     {
-      "id": "ac0d",
-      "firstName": "Subhradwip",
-      "lastname": "",
-      "email": "indiannightbot@gmail.com",
-      "password": "12345678",
-      "lastName": "Kulavi"
-    },
-    {
-      "id": "02d9",
-      "firstName": "Subhradwip",
-      "lastname": "",
-      "email": "indiannightbot@gmail.com",
-      "password": "12345678",
-      "lastName": "Kulavi"
-    },
-    {
-      "id": "75af",
+      "id": "ba82",
       "firstName": "Subhradwip",
       "lastName": "Kulavi",
-      "email": "indiannightbot@gmail.com",
-      "password": "12345678"
+      "email": "subhradwip01@gmail.com",
+      "password": "1234567"
     }
   ],
   "products": [
@@ -124,83 +108,42 @@
   ],
   "orders": [
     {
-      "id": "e152",
+      "id": "3199",
       "products": [
         {
           "productDetails": {
-            "id": "1",
-            "amount": "200",
-            "image": "https://i.pinimg.com/originals/25/0d/a3/250da32c889b624849bf828ae2ece420.jpg",
+            "id": "4",
+            "amount": "350",
+            "image": "https://i.pinimg.com/564x/26/ee/90/26ee903549b8b69635152f5db58264b2.jpg",
             "rating": "4.0",
-            "title": "EYEBOGLER Regular Fit Men's Cotton T-Shirt",
+            "title": "Jockey - Men's Regular Fit Round Neck Half Sleeved T-Shirt",
+            "description": "What does it feel like to witness climate change playing out in real-time? #notcool. Sound the alarm with our Women's Climate Change T-shirt, printed on organic cotton in our Carbon Neutral factory. Plus, when it's worn out you can send it back to us to be remade into something new. That's what real sustainability means to us."
+          },
+          "quantity": 3
+        },
+        {
+          "productDetails": {
+            "id": "5",
+            "amount": "400",
+            "image": "https://i.pinimg.com/564x/5a/cc/7f/5acc7f5af23bee76168f0f1fd24c75b4.jpg",
+            "rating": "4.0",
+            "title": "Max Men's Slim Polo",
             "description": "What does it feel like to witness climate change playing out in real-time? #notcool. Sound the alarm with our Women's Climate Change T-shirt, printed on organic cotton in our Carbon Neutral factory. Plus, when it's worn out you can send it back to us to be remade into something new. That's what real sustainability means to us."
           },
           "quantity": 1
         }
       ],
-      "totalPrice": 200,
-      "totalQuantity": 1
-    },
-    {
-      "id": "0604",
-      "products": [
-        {
-          "productDetails": {
-            "id": "1",
-            "amount": "200",
-            "image": "https://i.pinimg.com/originals/25/0d/a3/250da32c889b624849bf828ae2ece420.jpg",
-            "rating": "4.0",
-            "title": "EYEBOGLER Regular Fit Men's Cotton T-Shirt",
-            "description": "What does it feel like to witness climate change playing out in real-time? #notcool. Sound the alarm with our Women's Climate Change T-shirt, printed on organic cotton in our Carbon Neutral factory. Plus, when it's worn out you can send it back to us to be remade into something new. That's what real sustainability means to us."
-          },
-          "quantity": 1
-        }
-      ],
-      "totalPrice": 200,
-      "totalQuantity": 1
-    },
-    {
-      "id": "ca85",
-      "products": [
-        {
-          "productDetails": {
-            "id": "1",
-            "amount": "200",
-            "image": "https://i.pinimg.com/originals/25/0d/a3/250da32c889b624849bf828ae2ece420.jpg",
-            "rating": "4.0",
-            "title": "EYEBOGLER Regular Fit Men's Cotton T-Shirt",
-            "description": "What does it feel like to witness climate change playing out in real-time? #notcool. Sound the alarm with our Women's Climate Change T-shirt, printed on organic cotton in our Carbon Neutral factory. Plus, when it's worn out you can send it back to us to be remade into something new. That's what real sustainability means to us."
-          },
-          "quantity": 1
-        }
-      ],
-      "totalPrice": 200,
-      "totalQuantity": 1
+      "totalPrice": 1450,
+      "totalQuantity": 4
     }
   ],
   "favourites": [
     {
-      "id": "1",
-      "amount": "200",
-      "image": "https://i.pinimg.com/originals/25/0d/a3/250da32c889b624849bf828ae2ece420.jpg",
+      "id": "3",
+      "amount": "400",
+      "image": "https://i.pinimg.com/564x/55/82/bc/5582bc23ad7619f10f09d10141e7a6b9.jpg",
       "rating": "4.0",
-      "title": "EYEBOGLER Regular Fit Men's Cotton T-Shirt",
-      "description": "What does it feel like to witness climate change playing out in real-time? #notcool. Sound the alarm with our Women's Climate Change T-shirt, printed on organic cotton in our Carbon Neutral factory. Plus, when it's worn out you can send it back to us to be remade into something new. That's what real sustainability means to us."
-    },
-    {
-      "id": "2",
-      "amount": "300",
-      "image": "https://i.pinimg.com/564x/b9/83/a7/b983a7e4e9a4a05ee8ae8333f1c7b2d8.jpg",
-      "rating": "4.0",
-      "title": "RodZen - Men's Cotton Half Sleeve Regular Fit Striped T-Shirt",
-      "description": "What does it feel like to witness climate change playing out in real-time? #notcool. Sound the alarm with our Women's Climate Change T-shirt, printed on organic cotton in our Carbon Neutral factory. Plus, when it's worn out you can send it back to us to be remade into something new. That's what real sustainability means to us."
-    },
-    {
-      "id": "4",
-      "amount": "350",
-      "image": "https://i.pinimg.com/564x/26/ee/90/26ee903549b8b69635152f5db58264b2.jpg",
-      "rating": "4.0",
-      "title": "Jockey - Men's Regular Fit Round Neck Half Sleeved T-Shirt",
+      "title": "U.S. POLO ASSN - Men's Solid Regular Fit Cotton Polo",
       "description": "What does it feel like to witness climate change playing out in real-time? #notcool. Sound the alarm with our Women's Climate Change T-shirt, printed on organic cotton in our Carbon Neutral factory. Plus, when it's worn out you can send it back to us to be remade into something new. That's what real sustainability means to us."
     }
   ]
