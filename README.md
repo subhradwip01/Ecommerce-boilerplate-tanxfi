@@ -1,7 +1,9 @@
 # Ecommerce (React) Coding Assessment
 
-## Overview
 
+## Overview
+## Video Introduction
+https://drive.google.com/file/d/1V2vPtpF0mf-00bpjnzPDZWksMrqLP63c/view?usp=sharing
 ### Functionalities
   - Signup
   - Login
